@@ -2,6 +2,7 @@
 
 ## Description
 This is a chat application that allows real-time messaging, mood sharing, and gamification through tree growth based on interactions.
+It's not complete, many features and functionalities are still left tp be added. 
 
 ## Features
 - Real-time messaging
@@ -10,7 +11,7 @@ This is a chat application that allows real-time messaging, mood sharing, and ga
 
 ## Installation
 1. Clone the repository
-2. Set up the backend and frontend as per the instructions above.
+2. Set up the backend.
 
 ## Usage
 - Users can send messages, share moods, and interact with the gamification features.
