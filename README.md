@@ -2,7 +2,7 @@
 
 ## Description
 This is a chat application that allows real-time messaging, mood sharing, and gamification through tree growth based on interactions.
-It's not complete, many features and functionalities are still left tp be added. 
+It's not complete, many features and functionalities are still left to be added. 
 
 ## Features
 - Real-time messaging
