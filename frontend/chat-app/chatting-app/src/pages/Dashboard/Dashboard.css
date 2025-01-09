@@ -1,0 +1,93 @@
+/* Ensure html and body fill the full viewport */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full height of the screen */
+  width: 100%;  /* Full width of the screen */
+  display: flex; /* Flex container to center the dashboard */
+  justify-content: center; /* Horizontally center the dashboard */
+  align-items: center; /* Vertically center the dashboard */
+  overflow: hidden; /* Prevent scrollbars */
+  position: relative; /* To ensure the background is correctly positioned */
+}
+
+/* Add a semi-transparent overlay for the background image */
+html::before {
+  content: ''; /* No content, just the background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/dashboardbg.png"); /* Background image */
+  background-repeat: no-repeat;
+  background-size: cover; /* Cover the entire screen */
+  background-attachment: fixed; /* Fixed background */
+  opacity: 0.5; /* Make the image semi-transparent */
+  z-index: -1; /* Ensure it's behind the content */
+}
+
+/* Profile picture container */
+div.profiepicture {
+  width: 100px; /* Width of your image */
+  height: 100px; /* Height of your image */
+  background-image: url('../images/profileimage.jpeg'); /* Background image URL */
+  background-size: cover; /* Ensure the image covers the div */
+  background-position: center; /* Center the image within the div */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+}
+
+
+/* Dashboard spans the full screen */
+.dashboard {
+  display: flex; /* Flex layout for side-by-side elements */
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  justify-content: space-between; /* Space between the components */
+}
+
+/* Left panel: component1 */
+.component1 {
+  margin: 30px;
+  border-radius: 25px;
+  width: 30%; /* 50% of the screen width */
+  height: 100%; /* Full height of the dashboard */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent red */
+  padding: 20px; /* Padding inside the component */
+  box-sizing: border-box; /* Ensure padding doesn't add to width/height */
+}
+
+/* Right panel: component2 */
+.component2 {
+  margin: 30px;
+  margin-left: 0px;
+  border-radius: 25px;
+  width: 70%; /* 50% of the screen width */
+  height: 100%; /* Full height of the dashboard */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent yellow */
+  padding: 20px; /* Padding inside the component */
+  box-sizing: border-box; /* Ensure padding doesn't add to width/height */
+}
+
+/* User list styles */
+.user-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stack users vertically */
+  gap: 10px; /* Small gap between users */
+}
+
+.user-item {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /* Slight background for each user */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small shadow */
+  cursor: pointer; /* Pointer cursor to indicate clickability */
+}
+
+.user-item:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Change color on hover */
+}
+
