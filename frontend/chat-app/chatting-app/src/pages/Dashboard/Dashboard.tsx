@@ -9,11 +9,11 @@ const Dashboard: React.FC = () => {
   return (
     <div className="dashboard">
       <div className="component1">
-        <div>
-          <image ></image>
+        <div className="profiepicture"/>
+        <div className="information">
+          <h2>Welcome, {userData?.username.toUpperCase( )}!</h2>
+          <p>Email: {userData?.email}</p>
         </div>
-        <h2>Welcome, {userData?.username.toUpperCase( )}!</h2>
-        <p>Email: {userData?.email}</p>
       </div>
 
       <div className="component2">

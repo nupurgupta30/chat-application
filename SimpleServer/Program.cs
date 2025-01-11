@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:5108", "https://localhost:7145") // Replace with your front-end URL(s)
+        policy.WithOrigins("http://localhost:3000", "http://localhost:5108", "https://localhost:714", "http://localhost:5173") // Replace with your front-end URL(s)
               .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials(); // Credentials allowed with specific origins

@@ -27,18 +27,6 @@ html::before {
   z-index: -1; /* Ensure it's behind the content */
 }
 
-/* Profile picture container */
-div.profiepicture {
-  width: 100px; /* Width of your image */
-  height: 100px; /* Height of your image */
-  background-image: url('../images/profileimage.jpeg'); /* Background image URL */
-  background-size: cover; /* Ensure the image covers the div */
-  background-position: center; /* Center the image within the div */
-  background-repeat: no-repeat; /* Prevent repeating the image */
-  margin: 0; /* No margin */
-  padding: 0; /* No padding */
-}
-
 
 /* Dashboard spans the full screen */
 .dashboard {
@@ -48,15 +36,56 @@ div.profiepicture {
   justify-content: space-between; /* Space between the components */
 }
 
-/* Left panel: component1 */
+/* Left panel: component1 (for profile related things.) */
 .component1 {
   margin: 30px;
   border-radius: 25px;
   width: 30%; /* 50% of the screen width */
   height: 100%; /* Full height of the dashboard */
   background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent red */
-  padding: 20px; /* Padding inside the component */
+  /* padding: 20px; Padding inside the component */
   box-sizing: border-box; /* Ensure padding doesn't add to width/height */
+}
+
+/* Profile picture container */
+div.profiepicture {
+  width: 100px; /* Width of your image */
+  height: 100px; /* Height of your image */
+  background-image: 
+    url('../images/profile/girl1.png'), /* Image */
+    linear-gradient(45deg, rgb(240, 196, 116), rgb(255, 255, 255)); /* Gradient */  
+  background-size: cover; /* Ensure the image covers the div */
+  background-position: center; /* Center the image within the div */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  border-radius: 25%; /* Optional: For a circular profile picture */
+  margin: 0; /* Remove any external margins */
+  padding: 0; /* No padding */
+}
+
+div.profiepicture img {
+  padding: 0;
+  margin: 0;
+}
+
+/* Information box */
+div.information {
+  background-color: white;
+  color: black;
+  margin-left: 1rem; /* Remove left margins */
+  margin-right: 1rem; /* Remove right margins */
+  padding-left: 1rem; /* Add padding for content */
+  border-radius: 5%; /* Rounded corners only at the bottom */
+  text-align: left; /* Align text to the left */
+}
+
+div.information p {
+  margin: 0; /* Remove default paragraph margin */
+  padding: 0;
+  size: 100px;
+}
+div.information h2{
+  margin: 0; /* Remove default paragraph margin */
+  padding: 0;
 }
 
 /* Right panel: component2 */
@@ -90,4 +119,3 @@ div.profiepicture {
 .user-item:hover {
   background-color: rgba(0, 0, 0, 0.2); /* Change color on hover */
 }
-
